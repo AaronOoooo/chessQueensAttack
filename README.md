@@ -33,6 +33,7 @@ This Ruby program checks whether two queens placed on a standard 8x8 chessboard 
   - The same column,
   - Or the same diagonal.
 - Outputs whether the queens can attack each other or not.
+- **Displays an ASCII representation of the chessboard** with the two queens marked as `Q1` and `Q2` at their respective positions after the input is provided.
 
 ---
 
@@ -84,10 +85,30 @@ Expected: Queens can attack each other.
 
 ---
 
+## **Sample Output**
+
+Below is an example of what the output will look like after running the program with inputs `a1 h8`:
+
+  a b c d e f g h
+ +---------------+
+8| . . . . . . . q |
+7| . . . . . . . . |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . . . |
+2| . . . . . . . . |
+1| Q . . . . . . . |
+ +---------------+
+Queens can attack each other.
+
+---
+
 ## **Notes:**
 - Input positions must be in valid chess notation (e.g., a1 to h8).
 - If invalid input is provided, the program will notify the user.
 - Works on both Windows and Unix-based systems.
+- The board is displayed with both queens placed at the given positions to provide a visual representation.
 
 ---
 
